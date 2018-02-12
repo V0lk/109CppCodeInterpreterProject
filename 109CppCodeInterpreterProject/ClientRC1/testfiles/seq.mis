@@ -1,0 +1,11 @@
+VAR $mystring,STRING,100,"Hello World"
+VAR $counter,NUMERIC,0
+VAR #counter,NUMERIC,0
+VAR CYKA
+
+ASSIGN $counter,10
+LABEL LOOP
+	SLEEP 3
+	OUT $mystring,$counter,"!!\n"
+	SUB $counter,$counter,1
+JMPNZ LOOP,$counter
